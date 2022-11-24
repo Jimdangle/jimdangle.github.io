@@ -1,5 +1,5 @@
 // endpoint we are targetting
-const endpoint = 'http://ec2-54-193-142-247.us-west-1.compute.amazonaws.com:3000';
+const endpoint = 'https://cors-anywhere.herokuapp.com/http://ec2-54-193-142-247.us-west-1.compute.amazonaws.com:3000';
 
 
 function doThing(str){
