@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Foodseek Signup</title>
+        <!--Scripts-->
+        <script src="../scripts/main.js"></script>
+        <script src="../scripts/signup.js"></script>
+
+        <!--Styles-->
+        <link href="../styles/main.css" rel="stylesheet"/>
+        <link href="../styles/signup.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="CreateAccount" class="ThirdCenter">
+            <p id="signupIssues">Issues: <span id="issuespan"></span></p>           
+            <form id="SignupForm">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="jimbob@mail.com">
+
+                <label for="pass">Passowrd:</label>
+                <input type="password" id="pass" name="pass" placeholder="***********">
+
+                <label for="rePass">Re-Enter:</label>
+                <input type="password" id="rePass" name="rePass" placeholder="***********" oninput="validatePass()">
+                <p id="badPasswordMatch" style="display: none;">Passwords do not match</p>
+                <label for="userTypeList">User Type:</label>
+                <input list="usertype" id="userTypeList" name="userTypeList" />
+                <datalist id="usertype">
+                    <option value="Vendor"></option>
+                    <option value="Seeker"></option>
+                </datalist>
+                <button type="button" id="submitSignup" onclick="signupRequest()">Signup</button>
+            </form>
+
+            <form>
+                <button type="button" onclick="location.href='../index.html'">Go Back</button>
+            </form>
+        </div>
+    </body>
+</html>

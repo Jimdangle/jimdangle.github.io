@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!---Add in loading of either vendor or user based on the vendor status-->
+        <!--Maybe just load the correct page ie user/posts, or vendor/posts-->
+        <script src="../scripts/main.js"></script>
+        <script src="../scripts/home.js"></script>
+
+        <link href="../styles/main.css" rel="stylesheet"/>
+    </head>
+    <body onload="loadHome()">
+        <p>JWT: <span id="jwtspan"></span></p>
+        <button type="button" onclick="location.href='./logout.html'">Logout</button>
+    </body>
+</html>
